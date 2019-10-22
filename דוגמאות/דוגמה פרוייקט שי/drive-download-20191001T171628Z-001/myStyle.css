@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "lion_king";
+    src: url("lion_king.ttf");
+    }
+
+#formContainer {
+    width: 51%;
+    /* 600px */
+    height: 435px;
+    /* 435px */
+    background-image: url("formbgfin2.png");
+    background-size: cover;
+}
+
+#formHolder {
+    width: 71%;
+}
+
+.centerDiv {
+    margin-left: 24%;
+    margin-right: 25%
+}
+
+.centerText {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.h1 {
+    text-align: center !important;
+    font-size: 40px;
+    color: rgb(194, 3, 3)!important;
+    text-shadow: 0px 2px 2px black;  
+}
+
+.myDivStyle {
+    width: 200px;
+    height: 250px;
+    display: inline-block ;
+    background-image: url("notebg1.png");
+    background-size: cover;
+}
+
+.aba {
+    display: inline-block ;
+}
+
+.buttons {
+    margin-top: 12px;
+    background-color: red;
+    color:white;
+    border: none;
+    border-radius: 10%;
+}
+
+.pinStyle {
+    position: relative;
+    left: -50px;
+    width: 30px;
+    height:40px;
+    float: right;
+    background-size: cover;
+}

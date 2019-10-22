@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="mainScript.js"></script>
+    <script src="createTask.js"></script>
+    <script src="makeANote.js"></script>
+    <script src="validations.js"></script>
+    <script src="removeEventsForNotes.js"></script>
+    <script src="markPastTasks.js"></script>
+    <script src="reloadPage.js"></script>
+    <script src="easterEggs.js"></script>
+    <script src="reminder.js"></script>
+    <script src="intervals.js"></script>
+    <link rel="stylesheet" href="myStyle.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fadeInAnimation.css" type="text/css">
+    <link rel="stylesheet" href="reminder.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>My Awesome TB</title>
+</head>
+<body background="tile5.jpg" style="margin:5px" onload="fillNotesFromLocalStorage();checkPastTasks();">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h1 class="h1style" style="font-family:lion_king">
+                    <b>
+                        <span id="pageheadline">
+                            My awesome task boarD
+                        </span>
+                    </b>
+                </h1>
+                </br>
+                <div id="sidenotes" onmouseover="fadeSideNoteOut();"></div>
+                <div class="reminderLogAbaTitle">
+                    <div>
+                        Reminder Log:
+                    </div>
+                </div>
+                <div id="reminderLogAba" class="reminderLogAba">
+                    <div>
+                                        <b>
+                                            <span style="background-color: rgba(255, 255, 255, 0.774);">
+                                                Your tasks will appear here!
+                                            </span>
+                                        </b>
+                                        </br>
+                    </div>
+                </div>
+                <div id="formContainer" class="centerDiv col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                    <div id="formHolder" class="centerText">
+                        <form id="myform" style="margin-left:80px; margin-bottom:5px; text-align: left;" action="" method="POST">
+                            </br>
+                            </br>
+                            </br>
+                            <fieldset id="fieldsetinform">
+                                <span style="color:white;">
+                                    <b>
+                                            &nbsp;	<span id="contentsetheader">What do you need to do?</span>
+                                    </b>
+                                </span>    
+                            </br>
+                                <legend style="font-size: 20px;">
+                                    <b>
+                                        Create a new task:
+                                    </b>
+                                </legend>
+                                <textarea style="width: 100%;border:1px solid white;border-radius: 6px;" name="contentOfTask" id="contentOfTask" placeholder="Put your task down in writing for great results." onkeyup="saveCurrFormStateToLocalStorage();" onchange="changeContentFormBorderBack();"></textarea>
+                                </br>
+                                <span style="color:white;">
+                                    <b>
+                                            &nbsp;	<span id="timesetheader">Lets set up the time and date:</span>
+                                    </b>
+                                </span>
+                                </br>
+                                <input type="time" name="timeOfTask" id="timeOfTask" class="inputstyle" onkeyup="saveCurrFormStateToLocalStorage();">
+                                <input type="date" name="dateOfTask" id="dateOfTask" class="inputstyle" onkeyup="saveCurrFormStateToLocalStorage();">
+                                <input type="button" value="Create" onclick="prepareToCreateTask();" class="buttons" style="width:55px; height:30px; margin-top:8px;" onkeyup="changeDateFormHeaderAccordingToValidation();">
+                                </br>
+                                <span style="color:white;">
+                                    <b>
+                                        &nbsp; Check to set a reminder:
+                                    </b>
+                                </span>
+                                <div id="checkForReminder">
+                                    <input type="checkbox" name="checkForReminder" class="checkForReminder" id="checkMe" onclick="positionReminderSetUp();" checked>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="button" value="clear" onclick="clearForm();" class="buttons" style="width:55px; height:30px; margin-top:8px;">
+                                <div id="positionReminderSetUpAba">
+                                        <div id="positionReminderSetUp">
+                                                <span class="removeSetTimer glyphicon glyphicon-remove" onclick="removeSetTimer();"></span> | 
+                                                <input type="time" name="timeOfReminder" id="timeOfReminder" class="inputstyle" onkeyup="saveCurrFormStateToLocalStorage();">
+                                                <input type="date" name="dateOfReminder" id="dateOfReminder" class="inputstyle" onkeyup="saveCurrFormStateToLocalStorage();">`
+                                        </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div id="frameDiv1">
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

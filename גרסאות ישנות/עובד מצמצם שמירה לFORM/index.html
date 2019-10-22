@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c01731a83.js" crossorigin="anonymous"></script>
+    <title>My task board</title>
+
+</head>
+
+<body onload="getDataFromLocalS()">
+    <header id="header" class="col-12">My task board</header>
+    <form>
+        <div id="row">
+            <textarea name="enterNoteText" id="enterNoteText" rows="5" cols="55" class="col-10-enterNote" placeholder="enter your note here" required></textarea>
+        </div>
+
+        <h3>
+            enter end time (optional) and date for the task
+        </h3>
+        <div class="input">
+            <input type="time" name="timeEndOfTask" id="timeEndOfTask">
+            <input type="date" name="dateEndOfTask" id="dateEndOfTask" required>
+        </div>
+        <br />
+        <div class="buttons">
+            <button class="btn btn-primary" type="button" onclick="validateDateAndTime()">Create note</button>
+            <button type="reset" class="btn btn-primary">Clear Form</button>
+        </div>
+        <br/>
+    </form>
+    <footer id="footer"></footer>
+</body>
+
+</html>

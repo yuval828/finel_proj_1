@@ -1,0 +1,139 @@
+* {
+    /* direction: rtl; */
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+body {
+    background-image: url("../IMG/tile.jpg");
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(../fonts/Maria.ttf);
+}
+
+#header {
+    font-size: 5em;
+    font-family: headerFont;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /* background-color: #3CBC8D !important; */
+}
+
+#enterNoteText {
+    line-height: 2.2;
+    background-image: URL("../IMG/formbg.jpg");
+    background-repeat: repeat-y;
+}
+
+h3,
+#header {
+    text-shadow: 1px 2px beige;
+}
+
+
+/* Notes build */
+
+
+/* footer {
+    width: 100%;
+} */
+
+#Notes {
+    background-image: URL("../IMG/notebg.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 198px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+
+/* #noteText {
+    width: 86%;
+    height: 166px;
+    margin-top: 15% !important;
+    font-size: small;
+    margin-left: 2%;
+    overflow-y: auto;
+} */
+
+
+/* #noteDateEndOfTask {
+    width: 56%;
+    font-size: small;
+    margin-left: 7%;
+    text-align: left;
+} */
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 760px) {
+    /* For mobile phones: */
+    [class*="col-12"] {
+        font-size: 3em !important;
+    }
+    [class*="col-10-enterNote"] {
+        width: 80%;
+    }
+    [id*="Notes"] {
+        margin-left: 24% !important;
+    }
+}

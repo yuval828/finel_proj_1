@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url(fonts/RockSalt-Regular.ttf);
+}
+
+body {
+    text-align: center;
+    background-image: url("img/tile.jpg");
+    background-size: auto;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Rock Salt';
+    font-weight: bold
+}
+
+form {
+    padding: 10px;
+    background-image: url("img/formbg.jpg");
+    background-repeat: repeat-y;
+    background-position:center;
+    background-size: auto;
+}
+
+#taskName, #taskDesc, #datetimepicker1 {
+    width: 400px;
+    box-sizing: border-box; 
+}
+
+#datetimepicker1 {
+    margin: 0 auto;
+}
+
+#taskDesc {
+    height: 100px;
+    overflow-y: auto;
+    resize: none;
+}
+
+.col-6 {
+    text-align: left;
+    height: 250px;
+    width: 200px;
+    background-image: url("img/notebg.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    padding: 40px;
+    padding-right: 60px;
+}
+
+#taskD {
+    height: 110px;
+    width: 140px;
+    overflow-y: auto;
+}
+
+#xButton {
+    float: right
+}
+

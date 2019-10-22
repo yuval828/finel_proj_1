@@ -1,0 +1,88 @@
+* {
+    /* direction: rtl; */
+    /* text-align: center; */
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+    background-image: url("../IMG/tile.jpg");
+    margin-left: 40%;
+    padding: 20px;
+}
+
+
+/* #mainPic {
+    padding: 20px;
+    height: 100px;
+    text-align: center;
+    background-image: url("../IMG/title.png");
+    background-repeat: no-repeat;
+} */
+
+#enterPic {
+    /* padding: 20px; */
+    height: 170px;
+    background-image: URL("../IMG/formbg.jpg");
+}
+
+#mainPic {
+    height: 100px;
+    background-image: url("../IMG/title.png");
+    background-repeat: no-repeat;
+}
+
+
+/* span {
+    float: left;
+} */
+
+
+/* #enterNote {
+    opacity: 0.5;
+    overflow: scroll;
+} */
+
+
+/* .welcome-text,
+#copyrights {
+    font-size: 20px;
+}
+
+.header-text {
+    color: brown;
+}
+
+hr {
+    color: gray;
+}
+
+form {
+    text-align: right;
+    height: 200px;
+    font-size: 17px;
+}
+
+table {
+    border: 1px solid black;
+}
+
+
+
+tbody {
+    display: block;
+    border: 2px solid black;
+    --or--
+    box-shadow: 0 0 0 1px black;
+    
+}
+
+.left {
+    text-align: left;
+}
+
+input {
+    background-color: Yellow;
+}
+
+.left>input {
+    background-color: darkturquoise;
+} */

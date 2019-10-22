@@ -1,0 +1,67 @@
+.reminderLogAba {
+    position:absolute;
+    left: 900px;
+    top: 270px;
+    width:200px;
+    max-height: 200px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color:rgba(250, 166, 243, 0.774);
+    border:1px solid white;
+    border-radius:6px;
+    text-align: center;
+    
+}
+
+.reminderLogAbaTitle {
+    position:absolute;
+    left: 900px;
+    top: 250px;
+    width:200px;
+    max-height: 200px;
+
+    background-color:rgba(250, 166, 243, 0.774);
+    border:1px solid white;
+    border-radius:6px;
+    text-align: center;
+    
+}
+
+.reminderIsInThePast {
+    background-color:rgba(250, 166, 166, 0.774);
+}
+
+.reminderLog {
+    text-align: left;
+}
+
+.overlayCloseButtonForReminders {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+#positionReminderSetUp {
+    position:absolute;
+    left: 205px;
+    top: 280px;
+    width:185px;
+    max-height: 300px;
+    background-color:rgba(250, 166, 243, 0.774);
+    border:1px solid white;
+    border-radius:6px;
+    text-align: center;
+    font-size: 60%;
+}
+
+#checkForReminder{
+    position:absolute;
+    left: 190px;
+    top: 280px;
+}

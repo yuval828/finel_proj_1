@@ -1,0 +1,131 @@
+* {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+/* bg - pic for body */
+
+body {
+    background-image: url("../IMG/tile.jpg");
+}
+
+
+/* the selected font */
+
+@font-face {
+    font-family: headerFont;
+    src: url(../fonts/Maria.ttf);
+}
+
+
+/* hide font awosom btn */
+
+.delBtn {
+    opacity: 0;
+    margin-top: 9% !important;
+    margin-left: 68%;
+}
+
+.noteDateEndOfTask {
+    width: 56%;
+    font-size: small;
+    margin-left: 7%;
+    text-align: left;
+}
+
+
+/* show font awosom btn while hover the note */
+
+.Note:hover .delBtn {
+    opacity: 1;
+}
+
+#header {
+    font-size: 5em;
+    font-family: headerFont;
+}
+
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.noteText {
+    width: 86%;
+    height: 166px;
+    margin-top: -1% !important;
+    font-weight: 100;
+    margin-left: 2%;
+    overflow-y: auto;
+}
+
+
+/* the text area bg and line height */
+
+#enterNoteText {
+    line-height: 2.2;
+    background-image: URL("../IMG/formbg.jpg");
+    background-repeat: repeat-y;
+}
+
+
+/* shadow for the headers */
+
+h3,
+#header {
+    color: aliceblue;
+    text-shadow: 3px 1px 4px black;
+}
+
+
+/* the note div style */
+
+.Note {
+    background-image: URL("../IMG/notebg.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 198px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    float: left;
+    /* fadein note */
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* For desktop: */
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* For mobile phones: when width scr less then 760Px*/
+
+@media only screen and (max-width: 760px) {
+    [class="col-12"] {
+        font-size: 3em !important;
+    }
+    [class="col-10-enterNote"] {
+        width: 80%;
+    }
+    [class="Note"] {
+        margin-left: 27% !important;
+    }
+}

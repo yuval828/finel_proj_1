@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "lion_king";
+    src: url("lion_king.ttf");
+    }
+
+#formHolder {
+    width: 500px;
+    background-image: url("formbg2.jpg");
+}
+
+.centerText {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.h1 {
+    text-align: center !important;
+    font-size: 40px;
+    color: rgb(194, 3, 3)!important;
+    text-shadow: 0px 2px 2px black;  
+}
+
+.divStyle {
+    width: 200px;
+    height: 250px;
+    display: inline-block ;
+    background-image: url("notebg.png");
+}
+
+.aba {
+    display: inline-block ;
+}

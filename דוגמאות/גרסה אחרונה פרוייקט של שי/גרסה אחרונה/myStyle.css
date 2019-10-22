@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "lion_king";
+    src: url("lion_king.ttf");
+    }
+
+@font-face {
+    font-family: "death_note";
+    src: url("DEATHNOTEFont.ttf")
+}
+
+#formContainer {
+    width: 51%;
+    /* 600px */
+    height: 435px;
+    /* 435px */
+    background-image: url("formbgfin2.png");
+    background-size: cover;
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    #formContainer {
+        margin: 0;
+        width: 100%;
+        height: 800px;
+        background-image: url("formbgfin4.png");
+        background-size: cover;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 100%;
+        margin: 0%;
+        padding-left: 140px;
+        font-size: 200%;
+    }
+    #fieldsetinform{
+        width:150%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+
+    .buttons {
+        background-color: red;
+        color:white;
+        border: none;
+        border-radius: 10%;
+        width: 150px!important;
+        height: 40px!important;
+    }
+    
+    .buttons:hover {
+        background-color: rgb(194, 3, 3);
+        color:white;
+        border: none;
+        border-radius: 10%;
+        width: 150px!important;
+        height: 40px!important;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width: 768px) {
+    #formContainer {
+        margin: 0;
+        width: 100%;
+        height: 560px;
+        background-image: url("formbgfin4.png");
+        background-size: cover;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 100%;
+        margin: 0%;
+        padding-left: 70px;
+        font-size: 150%;
+    }
+    #fieldsetinform{
+        width:150%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+    .buttons {
+        background-color: red;
+        color:white;
+        border: none;
+        border-radius: 10%;
+        width: 150px!important;
+        height: 40px!important;
+    }
+    
+    .buttons:hover {
+        background-color: rgb(194, 3, 3);
+        color:white;
+        border: none;
+        border-radius: 10%;
+        width: 150px!important;
+        height: 40px!important;
+    }
+}
+
+
+
+@media screen and (min-width:376px) and (max-width: 414px) {
+    #formContainer {
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left:0px;
+        width: 100%;
+        height: 550px;
+        background-image: url("formbgmobile.png");
+        background-size: cover;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 74%!important;
+        margin: 0%;
+        padding-top: 65px;
+        padding-left: 50px;
+    }
+    #fieldsetinform{
+        width:150%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width: 375px) {
+    #formContainer {
+        margin: 0;
+        width: 100%;
+        height: 270px;
+        background-image: url("formbgfin4.png");
+        background-size: cover;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 80%;
+        margin: 0%;
+        padding: 0px;
+        font-size: 80%;
+    }
+    #fieldsetinform{
+        width:150%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    #formContainer {
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+        height: 260px;
+        background-image: url("formbgfin4.png");
+        background-size: cover;
+        font-size: 72%;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 100%;
+        margin: 0%;
+        padding: 0px;
+    }
+    #fieldsetinform{
+        width:130%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #formContainer {
+        margin: 0;
+        padding-top: 48px;
+        padding-left: 30px;
+        width: 100%;
+        height: 400px;
+        background-image: url("formbgmobile.png");
+        background-size: cover;
+        font-size: 70%;
+    }
+    .container {
+        width:100%;
+    }
+
+    #formHolder {
+        width: 100%;
+        margin: 0%;
+        padding: 0px;
+    }
+    #fieldsetinform{
+        width:140%;
+    }
+    .centerDiv {
+        margin: 0;
+    }
+}
+
+#formHolder {
+    width: 71%;
+}
+
+.centerDiv {
+    margin-left: 24%;
+    margin-right: 25%
+}
+
+.centerText {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.h1style {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(194, 3, 3);
+    text-shadow: 0px 2px 2px black;  
+}
+
+
+
+.yellowNote {
+    width: 200px;
+    height: 250px;
+    display: inline-block ;
+    background-image: url("notebgyellow.png");
+    background-size: cover;
+}
+
+.grayNote {
+    width: 200px;
+    height: 250px;
+    display: inline-block ;
+    background-image: url("notebggray.png");
+    background-size: cover;
+}
+
+.aba {
+    display: inline-block ;
+}
+
+.buttons {
+    background-color: red;
+    color:white;
+    border: none;
+    border-radius: 10%;
+}
+
+.buttons:hover {
+    background-color: rgb(194, 3, 3);
+    color:white;
+    border: none;
+    border-radius: 10%;
+}
+
+.pinStyle {
+    position: absolute;
+    left: 90px;
+    width: 30px;
+    height:40px;
+    float: right;
+    background-size: cover;
+}
+.inputstyle {
+    border-radius: 6px;
+}
+
+.disappearingnote {
+    position:absolute;
+    left: 100px;
+    top: 250px;
+    width:220px;
+    height:auto;
+    background-color:rgba(250, 166, 243, 0.774);
+    border:1px solid white;
+    border-radius:6px;
+    text-align: center;
+}
